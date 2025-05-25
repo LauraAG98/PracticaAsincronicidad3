@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&display=swap">
+    <title>Clima</title>
+</head>
+
+<body>
+    <video autoplay muted loop id="vFondo">
+        <source src="videos/fondo.mp4.mp4" type="video/mp4">
+        El video no se puede reproducir.
+    </video>
+
+    <main>
+        <div id="cuadro">
+            <header>
+                <h1>CLIMA ACTUAL DE MEDELLÍN</h1>
+                <button id="botonInicial">Consultar</button>
+            </header>
+
+            <section>
+                <div id="informacion">
+                    <div id="info1">
+                        <div id="ubicacionTemp">
+                            <img id="iconoTemp" src="assets/images/temperatura.png" alt="">
+                            <big id="temp"></big>
+                        </div>
+                        <div id="ubicacionHumed">
+                            <img id="iconoHume" src="assets/images/humedad.png" alt="">
+                            <p id="humed"></p>                            
+                        </div>
+                    </div>
+
+                    <div id="info2">
+                        <div id="ubicacionNub">
+                            <img id="iconoNub" src="assets/images/nubes.png" alt="">
+                            <p id="nub"></p>
+                        </div>
+                        <div id="ubicacionPresi">
+                            <img id="iconoPresi" src="assets/images/presion.png" alt="">
+                            <p id="presi"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <script src="index.js"></script>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
